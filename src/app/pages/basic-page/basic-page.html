@@ -71,9 +71,20 @@
   </div>
 
   <div class="stat place-items-center">
-    <div class="stat-title">Date | short</div>
-    <div class="stat-value">{{ customDate() | date:'short' }}</div>
+    <div class="stat-title">Date | mediumDate</div>
+    <div class="stat-value">{{ customDate() | date:'EEEE d, MMMM' }}</div>
     <div class="stat-desc">{{customDate()}}</div>
   </div>
+</div>
 
+<div class="divider"></div>
+
+<div class="gap-2 flex flex-row">
+  <h1 class="text-2xl font-bold "> Locale actual:
+    <span class="badge badge-secondary">ES</span>
+  </h1>
+
+  <button class="btn btn-primary"> Change en français </button>
+  <button class="btn btn-primary"> Change to English </button>
+  <button class="btn btn-primary"> Cambiar a español </button>
 </div>

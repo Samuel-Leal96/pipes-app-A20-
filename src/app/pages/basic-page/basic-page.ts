@@ -18,7 +18,6 @@ export default class BasicPage {
   tickindDateEffect = effect((onCleanup) => {
     const interval = setInterval(() => {
       this.customDate.set(new Date());
-      console.log('tick');
     }, 1000);
 
     onCleanup(() => clearInterval(interval));
