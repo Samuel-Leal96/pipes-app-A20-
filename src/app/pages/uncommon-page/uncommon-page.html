@@ -41,4 +41,10 @@
 
   </app-card>
 
+  <app-card title="JsonPipe">
+    <p class="text-primary">{{clients() | json}}</p>
+    <p class="text-primary">{{client() | json}}</p>
+    <p class="text-primary">{{clients().join(', ') | json | uppercase}}</p>
+  </app-card>
+
 </div>
